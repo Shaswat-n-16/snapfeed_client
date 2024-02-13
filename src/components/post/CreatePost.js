@@ -167,9 +167,7 @@ const CreatePost = () => {
         <button
           type="button"
           className="text-sm font-semibold leading-6 text-gray-900"
-          onClick={() => {
-            navigate("/");
-          }}
+          onClick={() => navigate("/")}
         >
           Cancel
         </button>
