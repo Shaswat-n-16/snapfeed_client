@@ -20,7 +20,7 @@ const Signup = () => {
       //   firstName,
       //   lastName,
       // });
-      const response = await axios.post("http://localhost:8080/auth/signup", {
+      const response = await axios.post("/auth/signup", {
         email,
         password,
         firstName,
