@@ -28,8 +28,9 @@ const CreatePost = () => {
     try {
       setIsLoading(true);
       e.preventDefault();
-      if (!title || !description || !image)
-        throw new Error("Please fill all the fields");
+      if (!title || !description || !image) {
+        toast.error("Please fill all the fields");
+      }
       const formData = new FormData();
       formData.append("image", image);
       formData.append("title", title);
