@@ -21,5 +21,5 @@ instance.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
+console.log("axio");
 export default instance;
