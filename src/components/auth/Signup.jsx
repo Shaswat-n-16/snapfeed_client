@@ -20,7 +20,7 @@ const Signup = () => {
       //   firstName,
       //   lastName,
       // });
-      const response = await axios.post("/auth/signup", {
+      const response = await axios.post("/auth/register", {
         email,
         password,
         firstName,
